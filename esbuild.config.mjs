@@ -24,7 +24,7 @@ await Promise.all(
 );
 
 const ctx = await esbuild.context({
-    entryPoints: ["src/main.js"],
+    entryPoints: ["src/index.js"],
     bundle: true,
     outdir: outputDir,
     minify: true,
