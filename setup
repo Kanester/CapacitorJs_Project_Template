@@ -1,0 +1,31 @@
+#!/bin/bash
+npm run build
+
+if [ -z "$1" ]; then
+ echo "Usage: build <command>"
+ exit 1
+fi
+
+case "$1" in
+ android)
+  echo "setting android..."
+  if [ ! -d "./android/" ]; then
+   npx cap add android
+  fi
+  npx cap sync android
+  echo "Setting completed!"
+  ;;
+ ios)
+  echo "setting ios..."
+  if [ ! -d "./ios/" ]; then
+   npx cap add ios
+  fi
+  npx cap sync ios
+  echo "setting completed!"
+  ;;
+ *)
+  echo "Unknown Command: $1"
+  echo "Available command: android, ios, web"
+ exit 1
+  ;;
+esac
