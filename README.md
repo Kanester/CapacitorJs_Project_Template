@@ -56,15 +56,24 @@ Please follow the steps below to ensure right installation.
     ```
 
 3. **Setup CapacitorJS**
+  - Setup CapacitorJs for Android
     ```bash
-    ./setup <android, ios>
+    ./temp build android
+    ```
+  - Setup CapacitorJs for IOS
+    ```bash
+    ./temp buils ios
     ```
 
 4. **Run CapacitorJS**
+  - Build an android apk
     ```bash
-    ./run <android, web>
+    ./temp run android
     ```
-
+  - Serve a webpage preview
+    ```bash
+    ./temp run web
+    ```
 ---
 
 ## License

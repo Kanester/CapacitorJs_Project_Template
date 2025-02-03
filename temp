@@ -1,0 +1,72 @@
+#!/bin/bash
+
+fun_name=$1
+param=$2
+
+build() {
+  npm run build
+
+  case $param in
+    android)
+      echo "Setting up android..."
+      if [ ! -d "./android/" ]; then
+        npx cap add android
+      fi
+      npx cap sync android
+      echo "Setting up completed!"
+      ;;
+
+    ios)
+      if [ ! -d "./ios" ]; then
+        npx cap add ios
+      fi
+      npx cap sync ios
+      echo "Setting up completed!"
+      ;;
+
+    *)
+      echo "Unknown command: $param"
+      echo "Available commands: android, ios"
+      exit 1
+      ;;
+  esac
+}
+
+run() {
+  case $param in
+    android)
+      echo "Building android APK..."
+      if [ ! -d "./android/" ]; then
+        echo "Please run './temp build android' first."
+        exit 1
+      fi
+      cd android
+      ./gradlew assembleDebug
+      echo "Build completed!"
+      ;;
+
+    web)
+      npm run serve
+      ;;
+
+    *)
+      echo "Unknown command: $param"
+      echo "Available commands: android, web"
+      exit 1
+      ;;
+  esac
+}
+
+case $fun_name in
+  build)
+    build "$param"
+    ;;
+  run)
+    run "$param"
+    ;;
+  *)
+    echo "Unknown command: $fun_name"
+    echo "Available commands: build, run"
+    exit 1
+    ;;
+esac
