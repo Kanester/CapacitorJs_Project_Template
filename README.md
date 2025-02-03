@@ -6,16 +6,16 @@ This repository is a pre-made template for creating a **CapacitorJS** projects, 
 
 ## Features of this Template
 
- - **Powered by EsBuild**
+- **Powered by EsBuild**
   - Esbuild is a super-fast build process for Javascript, Typescript and other web assets.
 
- - **Automatic Minification**
+- **Automatic Minification**
   - This templates provides a automatic minification for your HTML, Javascript, and CSS files during the build process to optimize performance
 
- - **Static Assets Support**
+- **Static Assets Support**
   - This templates could easily manage assets like images, fonts, favicons and other more.
 
- - **Developer Friendly**
+- **Developer Friendly**
   - This template is clean, lightweight setup that works seemlessly with CapacitorJS
   - Ideal for botj beginners and advance developers
 
@@ -55,14 +55,14 @@ Please follow the steps below to ensure right installation.
     npm ci
     ```
 
-3. **Build CapacitorJS**
+3. **Setup CapacitorJS**
     ```bash
-    ./build
+    ./setup <android, ios>
     ```
 
-4. **Build APK(Android)**
+4. **Run CapacitorJS**
     ```bash
-    ./run_android
+    ./run <android, web>
     ```
 
 ---
