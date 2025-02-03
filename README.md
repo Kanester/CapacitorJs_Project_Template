@@ -55,10 +55,14 @@ Please follow the steps below to ensure right installation.
     npm ci
     ```
 
-3. **Run CapacitorJS**
+3. **Build CapacitorJS**
     ```bash
-    npm run build
-    npx cap sync
+    ./build
+    ```
+
+4. **Build APK(Android)**
+    ```bash
+    ./run_android
     ```
 
 ---
