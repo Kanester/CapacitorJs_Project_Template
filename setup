@@ -1,10 +1,11 @@
 #!/bin/bash
-npm run build
 
 if [ -z "$1" ]; then
  echo "Usage: build <command>"
  exit 1
 fi
+
+npm run build
 
 case "$1" in
  android)
@@ -25,7 +26,7 @@ case "$1" in
   ;;
  *)
   echo "Unknown Command: $1"
-  echo "Available command: android, ios, web"
+  echo "Available command: android, ios"
  exit 1
   ;;
 esac

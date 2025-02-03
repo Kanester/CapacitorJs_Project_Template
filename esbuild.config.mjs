@@ -52,6 +52,6 @@ process.argv.includes("--serve")
 process.on(
     "SIGINT",
     async () => (
-        await ctx.dispose(), console.log("\n🧹 Cleanup done!"), process.exit(0)
+        await ctx.dispose(), process.exit(0)
     )
 );
