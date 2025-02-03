@@ -86,6 +86,19 @@ Using this template is super easy, just edit the what's inside the src directory
 > DO NOT rename the index.html and index.js inside the src folder or it'll fail.
 > You could rename it if you're already familiar with the structure of this template :)
 
+Remember to use this command everytime you modify your code. i dont make the rules, it just what it is :)
+```bash
+./temp build android
+./temp run android
+```
+or
+```bash
+./temp build ios
+```
+
+> [!NOTE]
+> Remember that ./temp is just an executable file i made, to get the full potential of capacitorJS, please read the [documentation](https://capacitorjs.com/).
+
 ---
 
 ## License
