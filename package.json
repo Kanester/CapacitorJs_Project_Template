@@ -1,0 +1,35 @@
+{
+  "name": "capacitorjs_project_template",
+  "version": "1.0.0",
+  "description": "A template for CapacitorJS projects",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kanester/CapacitorJs_Project_Template.git"
+  },
+  "keywords": [
+    "CapacitorJS",
+    "Template"
+  ],
+  "author": "KanesterP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kanester/CapacitorJs_Project_Template/issues"
+  },
+  "homepage": "https://github.com/Kanester/CapacitorJs_Project_Template#readme",
+  "devDependencies": {
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/cli": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "esbuild": "^0.24.2",
+    "esbuild-copy-plugin": "^1.0.0",
+    "fast-glob": "^3.3.3",
+    "fs": "^0.0.1-security",
+    "html-minifier-terser": "^7.2.0",
+    "path": "^0.12.7",
+    "typescript": "^5.7.3"
+  }
+}
