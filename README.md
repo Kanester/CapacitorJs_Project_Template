@@ -74,6 +74,18 @@ Please follow the steps below to ensure right installation.
     ```bash
     ./temp run web
     ```
+
+> By executing these command you'll see a android or ios folder and a dist folder.
+> dist folder is where minified version of your code is placed.
+> android or ios folder is a directory containing your app's source code. This is provided by CapacitorJS, so i recommend to read their [documentation](https://capacitorjs.com/).
+
+### Using the template
+
+Using this template is super easy, just edit the what's inside the src directory.
+> [!NOTE]
+> DO NOT rename the index.html and index.js inside the src folder or it'll fail.
+> You could rename it if you're already familiar with the structure of this template :)
+
 ---
 
 ## License
