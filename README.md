@@ -62,7 +62,7 @@ Please follow the steps below to ensure right installation.
     ```
   - Setup CapacitorJs for IOS
     ```bash
-    ./temp buils ios
+    ./temp build ios
     ```
 
 4. **Run CapacitorJS**
